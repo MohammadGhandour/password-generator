@@ -69,7 +69,7 @@ main{
       &:checked + label {
         background: #005CC8;
         filter: brightness(120%);
-        transform: scale(1.5);
+        transform: scale(1.1);
         color: #eee;
       }
     }
@@ -79,7 +79,7 @@ main{
       border-radius: 5px;
       padding: .75rem 1.25rem;
       margin-right: 20px;
-      transition: scale .2s ease;
+      transition: all .2s ease;
       cursor: pointer;
     }
   }
@@ -101,5 +101,19 @@ main{
       background: #005CC8;
       color: #eee;
     }
+  }
+}
+
+@media screen and (max-width:992px){
+  .category{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    label{
+      margin-top: 20px;
+    }
+  }
+  main{
+    width: 80%;
   }
 }
