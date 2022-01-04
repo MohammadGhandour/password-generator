@@ -27,8 +27,9 @@ function generatePassword() {
     }
     passwordOutput.value = newPassword;
     passwordOutput.style.fontFamily = 'serif';
-    passwordOutput.select();
+    passwordOutput.select(ev);
     document.execCommand('copy');
     generateButton.innerHTML = "Copied !";
     setTimeout(() => {generateButton.innerHTML = "Generate Password"}, 2000);
+    ev.preventDefault();
 }
