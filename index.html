@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Gugi&family=Mulish:wght@200&family=Orbitron&family=Oxygen:wght@300&family=Poppins:wght@500&family=Raleway:wght@600&family=Unica+One&family=Vollkorn&display=swap" rel="stylesheet">
-    <title>Password generator</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Gugi&family=Mulish:wght@200&family=Orbitron&family=Oxygen:wght@300&family=Poppins:wght@500&family=Raleway:wght@600&family=Unica+One&family=Vollkorn&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="icon.png">
+  <title>Password generator</title>
 </head>
+
 <body>
 
   <img src="background.jpg" alt="background">
@@ -21,9 +26,11 @@
       <div class="range">
 
         <div class="inputs">
-          <input type="range" min="4" max="24" step="1" value="8" id="password-length" oninput="document.getElementById('display-password-length').value=this.value">
-          
-          <input type="text" value="8" maxlength="2" id="display-password-length" oninput="document.getElementById('password-length').value=this.value">
+          <input type="range" min="4" max="24" step="1" value="8" id="password-length"
+            oninput="document.getElementById('display-password-length').value=this.value">
+
+          <input type="text" value="8" maxlength="2" id="display-password-length"
+            oninput="document.getElementById('password-length').value=this.value">
         </div>
 
         <div class="category">
@@ -40,7 +47,7 @@
           <label for="symbols">!-?</label>
 
         </div>
-        
+
         <button id="generateButton" type="button" onclick="generatePassword()">Generate Password</button>
 
       </div>
@@ -50,4 +57,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>
